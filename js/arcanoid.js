@@ -40,19 +40,9 @@ var Poderes = {
 	bolaLenta: "leeeeeennnnnttttoooo",
 	navePequenia "chiquita",
 	atraparBola: "atrapar",
-	dispararBala: function bala(x,y,velocidad){
-		this.x = x;
-		this.y = y;
-		this.velocidad = velocidad;
-		this.evento =  "ta ta ta";
-	},
+	dispararBala: function(x,y,velocidad){},
 	bolaFantasma: "fantasma",
-	lanzarBomba: function misil (x,y,velocidad){
-		this.x = x;
-		this.y = y;
-		this.velocidad = velocidad;
-		this.evento = "the Bomb"
-	},
+	lanzarBomba: function(x,y,velocidad){},
 	salvaVida: "Yupi!!!",
 	magnetismo: "magneto"
 }
