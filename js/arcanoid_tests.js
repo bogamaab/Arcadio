@@ -81,11 +81,18 @@ test("El nivel inicial debe estar construido según el archivo mapaBase.csv", fu
 module("4.Romper Bloques");
 
 test("Implementar la bola que rebota contra los bloques, paredes y la nave.", function(){
-	ok(true,"all pass");
+	dibujarGrilla("#body",23,13);
+	PintarNave(2);
+	var bola = dibujarBola(10,30,-1,1);
+	bola.paso();
+	equal(bola.angulo,60);
+	equal(bola.x,-1);
+	equal(bola.y,-1);
+	
 });
 
 test("Bloque simple (A): se destruye con un solo golpe", function(){
-	ok(true,"all pass");
+	
 });
 
 test("Bloque simple (B): se destruye con dos golpes", function(){
